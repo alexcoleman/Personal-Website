@@ -1,0 +1,117 @@
+/* Blog ****************************/
+/* Stylesheet currently in development *********/
+
+
+.postdate {
+	text-transform: uppercase;
+	color: #CCCCCC;
+}
+.entry { 
+	margin-bottom:40px;
+	overflow:auto;
+}
+.entrytext p { }
+
+.postnavigation { margin-bottom: 10px; }
+	
+.posttags {}
+.posttags a {
+	font-size: 10px;
+	color: #333333;
+	background: #000000;
+	padding: 3px;
+	text-shadow: 1px 1px 1px #000;
+}
+.posttags a:hover { 
+	background-color: #666666;
+	color: #333333;
+	text-shadow:0px 0px 0px;
+}
+.commentbubble a {
+	background: url(../images/commentbubble.png) no-repeat;
+	height: 22px;
+	width: 20px;
+	display:block;
+	color:#CCCCCC;
+	text-align:center;
+	font-size:10px!important;
+	line-height:1.9em;
+}
+.commentbubble a:hover { color:#FFFFFF; }
+
+.commentlist { min-height:90px; }
+.comment-text {
+	border-top: 1px solid #181818;
+	position:relative;
+}
+.comment-author {
+	border-top: 2px solid #333333;
+}
+.avatar {
+	float: left;
+	margin-top: 4px;
+	padding-right: 4px;
+}
+.authcomment { 	border-top: 2px solid #00AEEF; }
+.author {
+	padding-top:6px;
+	color: #CCCCCC;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-size: 1em;
+}
+.time {
+	background:none repeat scroll 0 0 #181818;
+	color:#333333;
+	font-size:.9em;
+	padding:2px;
+}
+.comment-edit-link {
+	position:absolute;
+	right:0px;
+	top:5px;
+	color: #333333;
+}
+.comment-form {
+	background: #1A1A1A url(../images/bg-boxes-2.jpg) no-repeat left top;
+	-moz-box-shadow:0 0 30px #0A0A0A;
+	font-size:1em!important;
+	line-height:1.6em!important;
+	overflow:auto;
+	padding:20px;
+}
+.comment-form p { color:#FFFFFF; }
+
+#commentform-author, #commentform-email, #commentform-url, #commentform-comment {
+	font-size: 10px;
+	color: #999999;
+	background: #181818;
+	padding: 2px;
+	border-top: 1px solid #565656;
+	border-right: 1px solid #212121;
+	border-bottom: 1px solid #212121;
+	border-left: 1px solid #565656;
+}
+#commentform-submit {
+	color: #FFFFFF;
+	background: #00aeef;
+	border-width: 0px;
+	border-style: none;
+	padding: .3em .6em;
+	display:block;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	font-size: 10px;	
+}
+.archive-title {
+	font-size: 1em;
+	color: #FFFFFF;
+	background: #00AEEF;
+	padding: 4px;
+	margin-bottom: 20px;
+	margin-left: 120px;
+	width: 190px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
