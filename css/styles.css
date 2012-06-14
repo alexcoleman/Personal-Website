@@ -1,194 +1,100 @@
-/* Alex Coleman 2010 *******************/
-/* External sheets & fonts *********************/
+/* Alex Coleman 2012 *******************/
 
-@import "reset.css";
-@import "fonts.css";
+/* v1.0 | 20080212 */
+
+* { font-size: 1em; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+html { font-size: 125% }
+body {
+	font-size: 50%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'PTSansRegular';
+    src: url('PTS55F-webfont.eot');
+    src: url('PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('PTS55F-webfont.woff') format('woff'),
+         url('PTS55F-webfont.ttf') format('truetype'),
+         url('PTS55F-webfont.svg#PTSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* General ****************************/
 
-body {
-	background: #181818 url(../images/bg.jpg) no-repeat center top;
-	font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
-}
-p {
-	font-size: 1.3em;
-	color: #777777;
-	line-height: 1.7em;
-	margin-bottom: 1.2em;
-}
-a {
-	color:#00AEEF;
-	text-decoration:none;
-}
-a:hover {
-	color:#00D3FF;
-	text-decoration:none;
-}
-blockquote {
-	border-left:1px solid #333333;
-	margin-left:40px;
-	padding-left:20px;
-	font-style:italic;
-}
-.hidden { display:none; }
-
+body {background: #181818 url(../images/bg.jpg) no-repeat center top; font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;}
+p {font-size: 1.3em; color: #777777; line-height: 1.7em; margin-bottom: 1.2em;}
+a {color:#00AEEF; text-decoration:none;}
+a:hover {color:#00D3FF; text-decoration:none;}
+blockquote {border-left:1px solid #333333; margin-left:40px; padding-left:20px; font-style:italic;}
+.hidden {display:none;}
 
 /* Layout ***********************/
 
 .column-left,
-.column-center,
 .column-right {float:left;}
-.column-left {width:150px; margin-right:10px; padding-right:40px;}
-.column-center {width:550px; padding-right:40px;}
-.column-right {width:150px;}
-
+.column-right {width:300px;}
+.column-left {width:600px; margin-right:40px;}
+.column-full {clear:left;}
 
 /* Header Tags ***********************/
 
-h1 {
-	margin-bottom:16px;
-	color: #FFFFFF;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.7), 0px 0px 3px rgba(0,0,0,.8);
-	font: 2.5em 'SansationRegular', arial, sans-serif;
-}
-h2 {
-	margin-top:30px;
-	margin-bottom:10px;
-	color: #FFFFFF;
-	text-shadow: 1px 1px 1px rgba(0,0,0,.7), 0px 0px 3px rgba(0,0,0,.8);
-	font: 1.5em 'SansationRegular', arial, sans-serif;
-	text-transform: uppercase;
-}
-.column-right h2 {
-	margin-top:10px;
-}
-
-
-/* Global Fashionable Lists ***********/
-
-.list-1 {
-	color: #666666;
-}
-	.list-1 li, .list-1 li {
-	padding-top: 2px;
-	padding-bottom: 2px;
-	border-top: 1px solid #333333;
-	}
-	.list-1 li a, .list-1 li a {
-		text-decoration: none;
-		color:#CCC;
-	}
-	.list-1 li a:hover, .list-1 li a:hover { color:#FFFFFF; }
-
-/* Widgetry ***************************/
-
-#flickr_badge_wrapper {
-	background: #1A1A1A url(../images/bg-boxes-2.jpg) no-repeat left top;
-	font-size:1em!important;
-	line-height:1.6em!important;
-	color: #CCCCCC!important;
-	overflow:auto;
-	padding-bottom: 9px;
-	margin-bottom: 10px;
-}
-	.flickr_badge_image {
-		float: left;
-		margin-left: 9px;
-		margin-top:9px;
-	}
-	.flickr_badge_image img {
-		width:50px;
-		height:50px;
-		padding:4px;
-		background: #101010;
-		border-top: 2px solid #000000;
-		border-left: 2px solid #000000;
-		border-right: 1px solid #303030;
-		border-bottom: 1px solid #303030;
-		-moz-border-radius: 1px;
-		-webkit-border-radius: 1px;
-		border-radius: 1px;
-	}
+h1 {margin-bottom:20px; color: #FFFFFF; text-shadow: 1px 1px 1px rgba(0,0,0,.7), 0px 0px 3px rgba(0,0,0,.8); font: 30px 'PTSansRegular', Arial, sans-serif;}
+h2 {margin-bottom:10px; color: #FFFFFF; text-shadow: 1px 1px 1px rgba(0,0,0,.7), 0px 0px 3px rgba(0,0,0,.8); font: 1.5em 'PTSansRegular', Arial, sans-serif; text-transform: uppercase;}
 
 /* Containers *************************/
 
-#wrapper {
-	width: 950px;
-	margin: 80px auto 0;
-	padding:0 20px;
-}
-#main {
-	width: 950px;
-}
-#footer {
-	padding: 20px 0 40px;
-	overflow:auto;
-}
+#wrapper {width: 940px; margin: 20px auto 0; padding:20px; overflow:auto;}
+#footer {padding: 20px 0 40px; overflow:auto;}
 
 /* About ***************************/
 
-#about { padding-bottom: 40px; }
-	
-#profile {
-	background: #090909;
-	border-top: 2px solid #000000;
-	border-left: 2px solid #000000;
-	border-right: 1px solid #303030;
-	border-bottom: 1px solid #303030;
-	-moz-border-radius: 1px;
-	-webkit-border-radius: 1px;
-	border-radius: 1px;
-}
-	#profile ul, #profile li{
-		margin:0;
-		padding:0;
-		list-style:none;
-		}
-	#profile, #profile li{ 
-		width:147px;
-		height:192px;
-		overflow:hidden; 
-		}
-#profile .mug {
-	width:137px;
-	height:183px;
-	margin-left:4px;
-	margin-top:4px;
-}	
-#profilebuttons {
-	margin-top: 5px;
-	width:150px;
-	overflow: auto;
-}
-	#profilebuttons span#prevBtn{
-		float:left;
-	}
-	#profilebuttons span#nextBtn{
-		float:right;
-	}
-
-#social {
-	margin-top:20px;
-}
-	#social ul li {
-		color:#CCCCCC;
-		padding: 0 0 4px 20px;
-		margin-bottom: 4px;
-		border-bottom: 1px solid #2F2F2F;
-		text-transform: uppercase;
-		text-align:right;
-	}
-		#social ul li#social-phone { background: url(../images/sprite-social.png) no-repeat 0px 2px; }
-		#social ul li#social-email { background: url(../images/sprite-social.png) no-repeat 0px -15px; }
-		#social ul li#social-twitter { background: url(../images/sprite-social.png) no-repeat 0px -56px; }
-
-
-/* Footer ***************************/
-
-#footer p {
-	font-size: 1em;
-}
-
+#mug {margin:0 0 20px; padding:10px; background-color:#090909; border:1px solid #303030;}
+#social {padding-top:40px;}
 
 /* Mobile Specific ***************************/
 
