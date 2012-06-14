@@ -67,7 +67,7 @@ table {
 /* General ****************************/
 
 body {background: #181818 url(../images/bg.jpg) no-repeat center top; font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;}
-p {font-size: 1.3em; color: #777777; line-height: 1.7em; margin-bottom: 1.2em;}
+p {font-size: 13px; color: #777777; line-height: 20px; margin-bottom: 13px;}
 a {color:#00AEEF; text-decoration:none;}
 a:hover {color:#00D3FF; text-decoration:none;}
 blockquote {border-left:1px solid #333333; margin-left:40px; padding-left:20px; font-style:italic;}
@@ -84,7 +84,7 @@ blockquote {border-left:1px solid #333333; margin-left:40px; padding-left:20px; 
 /* Header Tags ***********************/
 
 h1 {margin-bottom:20px; color: #FFFFFF; text-shadow: 1px 1px 1px rgba(0,0,0,.7), 0px 0px 3px rgba(0,0,0,.8); font: 30px 'PTSansRegular', Arial, sans-serif;}
-h2 {margin-bottom:10px; color: #FFFFFF; text-shadow: 1px 1px 1px rgba(0,0,0,.7), 0px 0px 3px rgba(0,0,0,.8); font: 1.5em 'PTSansRegular', Arial, sans-serif; text-transform: uppercase;}
+h2 {margin-bottom:10px; color: #FFFFFF; text-shadow: 1px 1px 1px rgba(0,0,0,.7), 0px 0px 3px rgba(0,0,0,.8); font: 15px 'PTSansRegular', Arial, sans-serif; text-transform: uppercase;}
 
 /* Containers *************************/
 
@@ -98,10 +98,13 @@ h2 {margin-bottom:10px; color: #FFFFFF; text-shadow: 1px 1px 1px rgba(0,0,0,.7),
 
 /* Mobile Specific ***************************/
 
-@media only screen and (max-device-width: 480px) {
-	.column-1, 
-	.column-3 {display:none;}
-	.column-2 {width:100%;}
-	#wrapper,
-	#about {width:100%; margin:0; padding:20px;}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.column-left,
+	.column-right,
+	.column-full {float:none; width:100%; margin-bottom:60px;}
+	#wrapper {width:80%; margin:60px auto; padding:0;}
+	h1 {font-size:54px;}
+	h2 {font-size:30px;}
+	p {font-size:26px; line-height:40px; margin-bottom:40px;}
+	#social {display:none;}
 }
